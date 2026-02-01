@@ -5,10 +5,45 @@
     <link rel="icon" href="/PrepStack/pp.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PrepStack - Crack Placements Smarter</title>
-    <script type="module" crossorigin src="/PrepStack/assets/index-D5ErETJW.js"></script>
+    <script type="module" crossorigin src="/PrepStack/assets/index-BklLyNc-.js"></script>
     <link rel="stylesheet" crossorigin href="/PrepStack/assets/index-CGS8FSle.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+(function(){
+  function loadFallback(forSrc){
+    try{
+      var parts = forSrc.split('/');
+      var idx = parts.indexOf('assets');
+      var assetPath = idx>=0? '/' + parts.slice(idx).join('/') : forSrc;
+      var fallback = 'https://cdn.jsdelivr.net/gh/Somnath9231/PrepStack@gh-pages' + assetPath;
+      var s = document.createElement('script');
+      s.type = 'module';
+      s.src = fallback;
+      s.async = false;
+      s.onload = function(){ console.info('Loaded fallback script', fallback); };
+      s.onerror = function(){ console.error('Fallback script failed', fallback); };
+      document.head.appendChild(s);
+    }catch(e){console.error(e)}
+  }
+
+  window.addEventListener('error', function(e){
+    var t = e.target || e.srcElement;
+    if(!t) return;
+    if(t.tagName === 'SCRIPT' && t.src && t.src.indexOf('/PrepStack/assets/index-') !== -1){
+      console.warn('Primary script failed, loading fallback...', t.src);
+      loadFallback(t.src);
+    }
+  }, true);
+
+  setTimeout(function(){
+    if(!window.__PREPSTACK_APP_LOADED){
+      var scripts = document.querySelectorAll('script[src*="/PrepStack/assets/index-"]');
+      if(scripts.length){ loadFallback(scripts[0].src); }
+    }
+  }, 3000);
+})();
+</script>
   </body>
 </html>
