@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://somnath9231.github.io/PrepStack",
+  "homepage": "https://mindsmiths17-sudo.github.io/prepstack",
 
   "scripts": {
     "dev": "vite",

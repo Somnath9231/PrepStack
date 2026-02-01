@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // Always use /PrepStack/ for GitHub Pages
-  base: '/PrepStack/',
+  // Always use /prepstack/ for GitHub Pages (lowercase repo name)
+  base: '/prepstack/',
   plugins: [react()],
   server: {
     port: 3000,
