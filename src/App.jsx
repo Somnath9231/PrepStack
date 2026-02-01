@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -19,33 +19,29 @@ import InterviewPrep from './pages/InterviewPrep'
 import CompanyInterview from './pages/CompanyInterview'
 
 function App() {
-  const basename = import.meta.env.BASE_URL
-  
   return (
-    <Router basename={basename}>
-      <div className="min-h-screen bg-dark">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/roadmaps" element={<Roadmaps />} />
-          <Route path="/practice" element={<Practice />} />
-          <Route path="/practice/dsa" element={<DSATopics />} />
-          <Route path="/practice/dsa/:topic" element={<DSATopic />} />
-          <Route path="/practice/algorithms" element={<Algorithms />} />
-          <Route path="/practice/algorithms/:category" element={<AlgorithmDetail />} />
-          <Route path="/practice/aptitude" element={<Aptitude />} />
-          <Route path="/practice/aptitude/:section" element={<AptitudeDetail />} />
-          <Route path="/dsa" element={<DSADetail />} />
-          <Route path="/programming-languages" element={<ProgrammingLanguages />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/interview-prep" element={<InterviewPrep />} />
-          <Route path="/interview-prep/:company" element={<CompanyInterview />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div className="min-h-screen bg-dark">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/roadmaps" element={<Roadmaps />} />
+        <Route path="/practice" element={<Practice />} />
+        <Route path="/practice/dsa" element={<DSATopics />} />
+        <Route path="/practice/dsa/:topic" element={<DSATopic />} />
+        <Route path="/practice/algorithms" element={<Algorithms />} />
+        <Route path="/practice/algorithms/:category" element={<AlgorithmDetail />} />
+        <Route path="/practice/aptitude" element={<Aptitude />} />
+        <Route path="/practice/aptitude/:section" element={<AptitudeDetail />} />
+        <Route path="/dsa" element={<DSADetail />} />
+        <Route path="/programming-languages" element={<ProgrammingLanguages />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/interview-prep" element={<InterviewPrep />} />
+        <Route path="/interview-prep/:company" element={<CompanyInterview />} />
+      </Routes>
+      <Footer />
+    </div>
   )
 }
 
