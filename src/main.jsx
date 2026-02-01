@@ -16,3 +16,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </ErrorBoundary>
   </React.StrictMode>,
 )
+// Mark app as loaded for fallback detection
+window.__PREPSTACK_APP_LOADED = true;
