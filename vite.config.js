@@ -1,11 +1,8 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// Build with the repo subpath so assets are referenced as /PrepStack/...
 export default defineConfig({
-  base: "/PrepStack/",
+  base: '/PrepStack/',
   plugins: [react()],
-  server: {
-    port: 3000,
-    open: true
-  }
-});
+})
