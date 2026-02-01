@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/pp.png" alt="PrepStack" className="h-8 w-8" />
+              <img src={`${import.meta.env.BASE_URL}pp.png`} alt="PrepStack" className="h-8 w-8" />
               <span className="text-xl font-bold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">
                 PrepStack
               </span>

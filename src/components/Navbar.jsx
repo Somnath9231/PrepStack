@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/pp.png" alt="PrepStack" className="h-10 w-10" />
+            <img src={`${import.meta.env.BASE_URL}pp.png`} alt="PrepStack" className="h-10 w-10" />
             <span className="text-2xl font-bold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">
               PrepStack
             </span>

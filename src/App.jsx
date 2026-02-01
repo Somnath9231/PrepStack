@@ -19,8 +19,10 @@ import InterviewPrep from './pages/InterviewPrep'
 import CompanyInterview from './pages/CompanyInterview'
 
 function App() {
+  const basename = import.meta.env.BASE_URL
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="min-h-screen bg-dark">
         <Navbar />
         <Routes>

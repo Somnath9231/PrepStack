@@ -65,7 +65,7 @@ const Home = () => {
               className="mb-8 flex justify-center"
             >
               <motion.img 
-                src="/pp.png" 
+                src={`${import.meta.env.BASE_URL}pp.png`}
                 alt="PrepStack Logo" 
                 className="h-64 w-64 md:h-80 md:w-80 drop-shadow-2xl"
                 animate={{
@@ -142,7 +142,7 @@ const Home = () => {
                     {[1, 2, 3, 4, 5, 6].map((num) => (
                       <motion.img
                         key={num}
-                        src={`/L${num}.png`}
+                        src={`${import.meta.env.BASE_URL}L${num}.png`}
                         alt={`Company ${num}`}
                         className="h-20 w-auto opacity-70"
                         whileHover={{
