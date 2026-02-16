@@ -126,7 +126,7 @@ const About = () => {
             >
               <div className="text-4xl mb-3">💻</div>
               <h3 className="text-xl font-semibold mb-2 text-neon-blue">Somnath Poddar</h3>
-              <p className="text-gray-400 text-sm">Coding & Development</p>
+              <p className="text-gray-400 text-sm">Founder & Development</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -134,23 +134,15 @@ const About = () => {
               transition={{ delay: 0.7 }}
               className="text-center"
             >
-              <div className="text-4xl mb-3">🎨</div>
-              <h3 className="text-xl font-semibold mb-2 text-neon-purple">Shrish Chandra</h3>
-              <p className="text-gray-400 text-sm">UI/UX & Designing</p>
-            </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
               className="text-center"
             >
-              <div className="text-4xl mb-3">📚</div>
-              <h3 className="text-xl font-semibold mb-2 text-neon-cyan">Aarushiy Das</h3>
-              <p className="text-gray-400 text-sm">Study Materials & Content</p>
-            </motion.div>
           </div>
           <p className="text-center text-gray-500 text-xs mt-6 italic">
-            Developed for IEM Competition
+            Developed by Somnath
           </p>
         </motion.div>
 
